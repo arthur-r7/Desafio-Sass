@@ -1,0 +1,21 @@
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+body {
+  background-color: burlywood;
+}
+
+.navbar-bgcol {
+  background-color: rgb(116, 65, 0);
+}
+
+.imgs-cafe {
+  width: 33%;
+}
+
+.img-home {
+  width: 33%;
+  height: 100vh;
+}
