@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+//variables//
+$color-body: burlywood;
+$nav-color: rgb(116, 65, 0);
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+body {
+  background-color: $color-body;
+}
+
+.navbar-bgcol {
+  background-color: $nav-color;
+}
+
+.imgs-cafe {
+  width: 33%;
+}
+
+.img-home {
+  width: 100%;
+  height: 100vh;
+}
+
+.text-justy {
+  text-align: justify;
+  margin-right: 10px;
+}
+
+/*imagenes carrusel pagina cafe*/
+
+.imgs-carousel {
+  width: 60%;
+  height: 400px;
+}
+
+/*imagenes del body*/
+.imgs-body {
+  border-radius: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 10px -12px 4px -7px rgba(0, 0, 0, 0.4);
+}
+
+/*Media phone index y cafe*/
+/*imagenes del index*/
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .index-imgs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*Posicion en columna version mobile body pagina de cafe*/
+  .flex-body-cafe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-body-cafe-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
