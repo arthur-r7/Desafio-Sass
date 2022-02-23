@@ -8,8 +8,7 @@
 
   /*Posicion en columna version mobile body pagina de cafe*/
   .flex-body-cafe {
-    display: flex;
-    flex-direction: column;
+    @extend .index-imgs;
     justify-content: center;
     align-items: center;
   }

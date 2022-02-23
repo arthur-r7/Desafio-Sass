@@ -7,9 +7,17 @@
 $color-body: burlywood;
 $nav-color: rgb(116, 65, 0);
 
+//import//
+@import "mediaquerie";
+
+//mixin//
+@mixin logo-size($w, $h) {
+  width: $w;
+  height: $h;
+}
+
 .logo {
-  width: 50px;
-  height: 50px;
+  @include logo-size(50px, 50px);
 }
 
 body {
@@ -47,28 +55,4 @@ body {
   margin-right: 10px;
   margin-bottom: 10px;
   box-shadow: 10px -12px 4px -7px rgba(0, 0, 0, 0.4);
-}
-
-/*Media phone index y cafe*/
-/*imagenes del index*/
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  .index-imgs {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /*Posicion en columna version mobile body pagina de cafe*/
-  .flex-body-cafe {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .flex-body-cafe-reverse {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
 }
