@@ -7,6 +7,19 @@
 $color-body: burlywood;
 $nav-color: rgb(116, 65, 0);
 
+//map//
+$font-sizing: (
+  h1: 65px,
+  h2: 50px,
+  p: 15px,
+);
+
+@each $font, $size in $font-sizing {
+  #{$font} {
+    font-size: $size;
+  }
+}
+
 //import//
 @import "mediaquerie";
 
